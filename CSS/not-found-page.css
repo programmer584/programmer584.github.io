@@ -231,7 +231,7 @@
   bottom: 0;
   width: 100%;
   height: 20px;
-  background: url(./images/grass.png);
+  background: url(/contagrus/images/grass.png);
   background-position: bottom;
   -webkit-animation: animateGrass 0.2s linear infinite;
   animation: animateGrass 0.2s linear infinite;
