@@ -1,22 +1,22 @@
 /* Cookies */
-.popup-screen{
+.popup-screen {
   font-family: "Roboto Mono", monospace;
   z-index: 99999999;
   position: fixed;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   visibility: hidden;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
@@ -25,36 +25,36 @@
   -o-transition-property: visibility;
   transition-property: visibility;
 }
-.popup-screen.active{
+.popup-screen.active {
   visibility: visible;
 }
-.popup-box{
+.popup-box {
   position: relative;
   background: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   max-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 20px;
   padding: 50px 40px;
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
-          box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -64,21 +64,21 @@
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
-.popup-screen.active .popup-box{
+.popup-screen.active .popup-box {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
-.popup-box h2{
+.popup-box h2 {
   font-size: 2.1em;
   font-weight: 800;
   margin-bottom: 20px;
 }
-.popup-box p{
+.popup-box p {
   font-size: 1em;
   margin-bottom: 20px;
 }
-.popup-box .btn{
+.popup-box .btn {
   color: #fff;
   background: rgb(45, 192, 26);
   font-size: 1.1em;
@@ -88,7 +88,7 @@
   padding: 7px 27px;
   border-radius: 7px;
 }
-.close-btn{
+.close-btn {
   position: absolute;
   font-size: 1em;
   top: 0;
@@ -103,16 +103,16 @@
   -o-transition-property: opacity;
   transition-property: opacity;
 }
-.close-btn:hover{
+.close-btn:hover {
   opacity: 1;
 }
 
 /* Scrolbar + Selection */
-::-moz-selection{
+::-moz-selection {
   color: white;
   background-color: rgb(45, 192, 26);
 }
-::selection{
+::selection {
   color: white;
   background-color: rgb(45, 192, 26);
 }
@@ -121,7 +121,7 @@
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
@@ -135,7 +135,13 @@
 .error {
   font-family: consolas;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#03a9f4));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fff),
+    to(#03a9f4)
+  );
   background: -o-linear-gradient(bottom, #fff, #03a9f4);
   background: linear-gradient(0deg, #fff, #03a9f4);
 }
@@ -147,11 +153,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .sky h2 {
   font-size: 16em;
@@ -161,32 +167,32 @@
 .sky h2 span {
   display: inline-block;
   -webkit-animation: animate 2s ease-in-out infinite;
-          animation: animate 2s ease-in-out infinite;
+  animation: animate 2s ease-in-out infinite;
 }
 .sky h2 span:nth-child(even) {
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 @-webkit-keyframes animate {
   0%,
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   50% {
     -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
+    transform: translateZ(50px);
   }
 }
 @keyframes animate {
   0%,
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   50% {
     -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
+    transform: translateZ(50px);
   }
 }
 .field {
@@ -194,7 +200,7 @@
   height: 40vh;
   background-color: #6e2308;
   -webkit-box-shadow: inset 0 20px 10px #51680c;
-          box-shadow: inset 0 20px 10px #51680c;
+  box-shadow: inset 0 20px 10px #51680c;
   text-align: center;
 }
 .field h2 {
@@ -228,7 +234,7 @@
   background: url(/images/grass.png);
   background-position: bottom;
   -webkit-animation: animateGrass 0.2s linear infinite;
-          animation: animateGrass 0.2s linear infinite;
+  animation: animateGrass 0.2s linear infinite;
 }
 @-webkit-keyframes animateGrass {
   0% {
@@ -254,10 +260,10 @@
   .plane {
     left: 10px;
   }
-  .field h2{
+  .field h2 {
     font-size: 1.2em;
   }
-  .field{
+  .field {
     padding: 50px;
   }
 }
