@@ -297,6 +297,11 @@ nav a {
   margin-top: 0;
   margin-bottom: 0;
 }
+@media only screen and (max-device-width: 1024px) {
+  .content {
+    margin: 15%;
+  }
+}
 .content a {
   color: #273469;
 }
