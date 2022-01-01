@@ -286,7 +286,7 @@ nav a {
 
 /* Content */
 .content_box {
-  background: url(/images/gray-shapes.jpg) no-repeat;
+  background: url(./images/gray-shapes.jpg) no-repeat;
   background-size: cover;
   background-position: bottom;
 }
