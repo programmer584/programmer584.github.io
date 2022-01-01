@@ -286,7 +286,8 @@ nav a {
 
 /* Content */
 .content_box {
-  background: url(./images/gray-shapes.jpg) no-repeat;
+  background: url("https://programmer584.github.io/contagrus/images/gray-shapes.jpg")
+    no-repeat;
   background-size: cover;
   background-position: bottom;
 }
