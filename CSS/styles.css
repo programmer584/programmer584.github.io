@@ -298,7 +298,7 @@ nav a {
 @media only screen and (max-device-width: 1024px) {
   .content {
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 15px;
   }
 }
 
