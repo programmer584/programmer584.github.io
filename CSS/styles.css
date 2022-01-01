@@ -295,6 +295,12 @@ nav a {
   font-family: "Roboto Mono", monospace;
   margin-top: 70px;
 }
+@media only screen and (max-device-width: 1024px) {
+  .content {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
 
 /* Mobile Bestellen Banner */
 
