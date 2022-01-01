@@ -347,7 +347,7 @@ nav a {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("/images/pc-3beeldschermen.jpg");
+  background-image: url("./images/pc-3beeldschermen.jpg");
   min-height: 100%;
 }
 
