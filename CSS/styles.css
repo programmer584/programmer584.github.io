@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-/* @import url("https://programmer584.github.io/contagrus/fontawesome-free-5.15.4-web/css/all.css"); */
+@import url(/fontawesome-free-5.15.4-web/css/all.css);
 
 /* Cookies */
 .popup-screen {
@@ -184,39 +184,6 @@ nav a {
   padding-left: 0px;
 }
 
-/* Dropdown */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #24252a;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 15px;
-}
-
-.dropdown-content a {
-  color: rgb(45, 192, 26);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #454750;
-}
-
-@media all and (min-width: 850px) {
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
 /* Mobile Header */
 .nav_menu {
   display: -webkit-box;
@@ -328,12 +295,6 @@ nav a {
   font-family: "Roboto Mono", monospace;
   margin-top: 70px;
 }
-@media only screen and (max-device-width: 1024px) {
-  .content {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
 
 /* Mobile Bestellen Banner */
 
@@ -386,24 +347,24 @@ nav a {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("/contagrus/images/pc-3beeldschermen.jpg");
+  background-image: url("/images/pc-3beeldschermen.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("/contagrus/images/laptop-pc.jpg");
+  background-image: url("/images/laptop-pc.jpg");
   min-height: 100%;
 }
 .bgimg-3 {
-  background-image: url("/contagrus/images/pc-2beeldschermen.jpg");
+  background-image: url("/images/pc-2beeldschermen.jpg");
   min-height: 100%;
 }
 .bgimg-4 {
-  background-image: url("/contagrus/images/laptop.jpg");
+  background-image: url("/images/laptop.jpg");
   min-height: 100%;
 }
 .bgimg-5 {
-  background-image: url("/contagrus/images/blue-waves.jpg");
+  background-image: url("/images/blue-waves.jpg");
   min-height: 80%;
 }
 
