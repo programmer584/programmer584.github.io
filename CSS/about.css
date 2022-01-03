@@ -185,6 +185,40 @@ nav a {
   padding-left: 0px;
 }
 
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #24252a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: rgb(45, 192, 26);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #454750;
+}
+
+@media all and (min-width: 850px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
 /* Mobile Header */
 .nav_menu {
   display: -webkit-box;
@@ -302,7 +336,7 @@ h1 {
   text-align: center;
   font-size: xx-large;
   color: #edf0f1;
-  background:rgba(45, 192, 26, 0.473);
+  background: rgba(45, 192, 26, 0.473);
 }
 
 /* Cards */
