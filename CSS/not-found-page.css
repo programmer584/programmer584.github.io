@@ -135,8 +135,8 @@
 .error {
   font-family: consolas;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#03a9f4));
   background: -o-linear-gradient(bottom, #fff, #03a9f4);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#03a9f4));
   background: linear-gradient(0deg, #fff, #03a9f4);
 }
 .sky {
