@@ -1,4 +1,4 @@
-ErrorDocument 404 /not-found-page.html
+
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d

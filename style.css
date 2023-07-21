@@ -1,0 +1,643 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: large;
+}
+
+hr {
+    /* margin: 5px auto; */
+    /* background-color: rgb(255, 255, 255); */
+    width: 80%;
+    /* height: 4px; */
+    /* border-radius: 50px; */
+}
+
+* a:hover {
+    color: #84acce;
+}
+
+/* Cookies */
+.popup-screen {
+    font-family: "Roboto Mono", monospace;
+    z-index: 99999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    visibility: hidden;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-transition-property: visibility;
+    -o-transition-property: visibility;
+    transition-property: visibility;
+}
+.popup-screen.active {
+    visibility: visible;
+}
+.popup-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+.popup-screen.active .popup-box {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.popup-box h2 {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.popup-box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.popup-box .btn {
+    color: #fff;
+    background: rgb(45, 192, 26);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 27px;
+    border-radius: 7px;
+}
+.close-btn {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.close-btn:hover {
+    opacity: 1;
+}
+
+/* Scrollbar + Selectie v tekst */
+::-moz-selection {
+    color: white;
+    background-color: #84acce;
+}
+::selection {
+    color: white;
+    background-color: #84acce;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #84acce;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #84acced5;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 150px;
+    z-index: 999;
+}
+
+header a {
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header .logo {
+    width: 350px;
+    height: auto;
+    padding-left: 4em;
+}
+
+header .logo_rental {
+    width: 200px;
+    height: auto;
+    margin-right: 7%;
+}
+
+.later {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 260px;
+    background: linear-gradient(to top right, transparent, orange);
+    z-index: 100;
+}
+
+/* Fullscreen picture */
+.fullscreenpicture {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreenpicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+/* Socials */
+.socials-wrapper {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10;
+}
+
+.socials-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    border: solid white 3px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.socials-wrapper a:nth-child(1) {
+    color: #e1306c;
+    border-color: #e1306c;
+}
+/* .socials-wrapper a:nth-child(2){
+    color: #00000000;
+    border-color: #00000000;
+} */
+/* .socials-wrapper a:nth-child(3){
+    color: #4267b2;
+    border-color: #4267b2;
+} */
+.socials-wrapper a:nth-child(4) {
+    color: #4267b2;
+    border-color: #4267b2;
+}
+
+/* Arrow */
+.arrow-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.arrow-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Music collection size */
+.collection {
+    text-transform: uppercase;
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 0 30px 0;
+}
+
+.collection * {
+    padding: 10px;
+}
+
+/* Our genres */
+.genres {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.genres p {
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+/* Places been slide */
+.places {
+    background-color: black;
+    color: white;
+}
+
+.places h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos_places {
+    overflow: hidden;
+    padding: 60px 0;
+    background: black;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos_places:before,
+.logos_places:after {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos_places:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.logos_places:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.logos_places:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos_places-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos_places-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+/* Music player SoundCloud */
+/* .soundcloud {
+    height: 500px;
+    color: black;
+    background-color: orange;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+} */
+
+/* Music player */
+
+.ourmusic h1 {
+    text-align: center;
+    background-color: #84acce;
+    padding: 30px;
+    color: white;
+}
+
+.oursongs {
+    min-height: 450px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    letter-spacing: 1px;
+    transition: all 0.35s linear;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    --bg: #84acce;
+    background-color: var(--bg);
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.oursongs .player {
+    width: 640px;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 8px 24px;
+    position: relative;
+    border-radius: 64px;
+}
+
+.oursongs .control,
+#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+}
+
+.oursongs #playbtn {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+.oursongs #playbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+.oursongs .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.oursongs #current {
+    text-align: right;
+}
+
+.oursongs .bar {
+    --space: -4px;
+    background-color: #2424240b;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+.oursongs #progress {
+    display: block;
+    width: var(--progress, 0%);
+    background-color: white;
+    transition: all 1s linear;
+    height: 100%;
+}
+
+/* Test */
+.test2 {
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.test1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.test1 {
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.test12 {
+    display: flex;
+    align-items: stretch;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.test2 h2 {
+    margin: 2em;
+    color: white;
+}
+
+.test2 ul {
+    color: white;
+    margin: 2em;
+}
+.test2 p {
+    margin: 2em;
+    color: white;
+}
+
+/* Contact bookings, collabs, ... */
+.bookings {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    background-color: black;
+}
+
+.bookings p {
+    padding: 10px;
+}
+
+/* Rental */
+.rental {
+    display: flex;
+    align-items: stretch;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rental_links {
+    min-width: 600px;
+    max-width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.rental_links img {
+    max-width: 100%;
+    height: auto;
+    filter: blur(3px);
+}
+
+.rental_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    z-index: 999;
+    border-radius: 8px;
+    color: rgb(255, 132, 0);
+    border-color: rgb(255, 132, 0);
+    border-width: 3px;
+    padding: 4px;
+    border-style: solid;
+}
+
+.rental_rechts {
+    min-width: 600px;
+    max-width: 50%;
+}
+
+.rental_rechts img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Live stream */
+.livestream {
+    background-color: red;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.livestream h1 {
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+
+.livestream .vid {
+    height: 70vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.livestream img {
+    height: 100%;
+    width: auto;
+    border-radius: 40px;
+    filter: blur(4px);
+}
+
+.livestream i {
+    position: absolute;
+    right: 50%;
+    font-size: large;
+}
+
+.livestream a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 15px;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+    align-items: center;
+}
+
+footer div {
+    padding: 10px;
+}
+
+footer .kolom {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: flex-start;
+}
+
+footer .kolom * {
+    padding: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

@@ -1,154 +1,137 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Contagrus</title>
-    <meta name="keywords" content="contact, contagrus" />
-    <meta
-      name="description"
-      content="Op deze website kunt u contact opnemen met de helpdesk van Contagrus."
-    />
-    <link rel="shortcut icon" href="/images/icon.png" />
-    <link rel="stylesheet" href="CSS/others.css" />
-  </head>
-  <body>
-    <div class="popup-screen">
-      <div class="popup-box">
-        <i class="fas fa-times close-btn"></i>
-        <h2>Opgelet!</h2>
-        <p>
-          Deze website is in testfase, er kan dus valse informatie in staan die
-          nog aangepast moet worden. Ook kunnen er nog technische problemen
-          optreden.
-        </p>
-      </div>
-    </div>
-    <div class="background--custom">
-      <canvas id="canvas" />
-    </div>
-    <nav>
-      <ul class="nav_menu">
-        <li class="nav_logo">
-          <a href="/"
-            ><img
-              class="logo"
-              src="/images/logo.png"
-              alt="logo"
-              width="204"
-              height="30px"
-          /></a>
-        </li>
-        <li id="nav_item1" class="nav_item">
-          <div class="dropdown">
-            <a href="/" class="dropbtn"><i class="fas fa-home"></i> Home</a>
-            <div class="dropdown-content">
-              <a href="/#uw_website">Uw website</a>
-              <a href="/#prijs">Prijs</a>
-              <a href="/#apparaten">Apparaten</a>
-              <a href="/#veiligheid">Veiligheid</a>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="contact.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <title>Contact</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./media/Logo_Clear_Icon.png" />
+    </head>
+    <body>
+        <!-- Pop-up screen -->
+        <div
+            class="popup-screen"
+            style="display: flex">
+            <div class="popup-box">
+                <i class="fas fa-times close-btn"></i>
+                <h2>Opgelet!</h2>
+                <p>
+                    Er wordt aan deze website gewerkt. Deze website is mogelijks niet veilig en bevat mogelijks foute informatie. Als u niet meewerkt aan het maken van deze website, raden we aan de
+                    website te verlaten.
+                </p>
             </div>
-          </div>
-        </li>
-        <li id="nav_item2" class="nav_item">
-          <a href="about.html"><i class="far fa-address-card"></i> Over ons</a>
-        </li>
-        <li id="nav_item3" class="nav_item">
-          <a href="mogelijkheden.html"
-            ><i class="fas fa-list-ul"></i> Onze mogelijkheden</a
-          >
-        </li>
-        <li
-          onclick="location.href='bestellen.html'"
-          id="nav_item_button"
-          class="nav_item button"
-        >
-          <a class="cta"> <i class="fas fa-cart-arrow-down"></i> Bestel nu </a>
-        </li>
-        <li class="nav_toggle">
-          <a href="#"><span class="bars"></span></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="content">
-      <h1>Contact</h1>
-      <strong>Ons contacteren</strong>
-      <p>
-        Zit u met vragen of wilt u iets melden? Aarzel dan zeker niet om ons te
-        contacteren.
-      </p>
-      <ul>
-        <li>
-          Mail: <a href="mailto: example@contagrus.be">example@contagrus.be</a>
-        </li>
-      </ul>
-      <br />
-      <strong>Ons adres</strong>
-      <ul>
-        <li>
-          Het spijt ons maar we hebben geen adres, omdat wij vanuit thuis de
-          website's maken
-        </li>
-      </ul>
-    </div>
-    <br />
-    <hr />
-    <footer>
-      <div class="footer__links">
-        <div class="footer1">
-          <a href="algemene_voorwaarden.html"
-            ><i class="fas fa-list-alt"></i> Algemene voorwaarden</a
-          ><span>|</span>
         </div>
-        <div class="footer2">
-          <a href="privacybeleid.html"
-            ><i class="far fa-list-alt"></i> Privacybeleid</a
-          ><span>|</span>
+        <!-- Header -->
+        <header>
+            <a href="/">
+                <img
+                    class="logo"
+                    src="./media/Logo_Clear_Website.png"
+                    alt="logo" />
+            </a>
+            <nav>
+                <a href="#music">
+                    <i class="fa-solid fa-music"></i>
+                    Our songs
+                </a>
+                <a href="#test2">
+                    <i class="fa-solid fa-flask-vial"></i>
+                    Test
+                </a>
+                <a href="#bookings">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Bookings
+                </a>
+            </nav>
+            <a href="https://www.rental.thecrossoverz.com">
+                <img
+                    class="logo_rental"
+                    src="./media/Logo_Clear_Website_Rental.png"
+                    alt="logo the crossoverz rental" />
+                <p><i class="share-square"></i>OPEN RENTAL WEBSITE</p>
+            </a>
+        </header>
+        <div class="later"></div>
+        <!-- Tekst -->
+        <div class="tekstvak">
+            <p>Nog ni gemaakt</p>
         </div>
-        <div class="footer3">
-          <a href="contact.html"><i class="far fa-envelope"></i> Contact</a
-          ><span>|</span>
-        </div>
-        <div class="footer4">
-          <a href="betalen.html"><i class="fas fa-credit-card"></i> Betalen</a>
-        </div>
-      </div>
-      <div class="footer__copyright">© 2021 Nog geen copyright</div>
-    </footer>
-    <hr />
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
+        <!-- Footer -->
+        <footer>
+            <div class="kolom">
+                <p>© 2023 Nog geen copyright</p>
+                <p>The Crossoverz Bvba</p>
+                <p>39823983038</p>
+            </div>
+            <div class="kolom">
+                <a href="https://www.maps.google.com">
+                    <p>Belgium</p>
+                    <p>2960 Brecht</p>
+                    <p>Schoolstraat</p>
+                </a>
+            </div>
+            <div class="kolom">
+                <a href="./contact.html">
+                    <i class="fa-solid fa-address-card"></i>
+                    Contact
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Algemene Voorwaarden
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    Coockies
+                </a>
+            </div>
+            <div class="kolom">
+                <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href=""><i class="fa-brands fa-tiktok"></i> Tik Tok</a>
+                <a href=""><i class="fa-brands fa-soundcloud"></i> Soundcloud</a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+            </div>
+        </footer>
+        <script src="./srcipt.js"></script>
 
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-        }, 500);
-      });
+        <!-- Script voor pop-up -->
+        <script type="text/javascript">
+            const popupScreen = document.querySelector(".popup-screen");
+            const popupBox = document.querySelector(".popup-box");
+            const closeBtn = document.querySelector(".close-btn");
 
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-      });
-      const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
-      if (WebsiteCookie != -1) {
-        popupScreen.style.display = "none";
-      } else {
-        popupScreen.style.display = "flex";
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
-    <script>
-      var gradient = new Gradient();
-      gradient.initGradient("#canvas");
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/JS/script.js"></script>
-  </body>
+            window.addEventListener("load", () => {
+                setTimeout(() => {
+                    popupScreen.classList.add("active");
+                }, 500);
+            });
+
+            closeBtn.addEventListener("click", () => {
+                popupScreen.classList.remove("active");
+                document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+            });
+            const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+            if (WebsiteCookie != -1) {
+                popupScreen.style.display = "none";
+            } else {
+                popupScreen.style.display = "flex";
+            }
+        </script>
+    </body>
 </html>

@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: large;
+}
+
+hr {
+    /* margin: 5px auto; */
+    /* background-color: rgb(255, 255, 255); */
+    width: 80%;
+    /* height: 4px; */
+    /* border-radius: 50px; */
+}
+
+* a:hover {
+    color: #84acce;
+}
+
+/* Cookies */
+.popup-screen {
+    font-family: "Roboto Mono", monospace;
+    z-index: 99999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    visibility: hidden;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-transition-property: visibility;
+    -o-transition-property: visibility;
+    transition-property: visibility;
+}
+.popup-screen.active {
+    visibility: visible;
+}
+.popup-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+.popup-screen.active .popup-box {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.popup-box h2 {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.popup-box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.popup-box .btn {
+    color: #fff;
+    background: rgb(45, 192, 26);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 27px;
+    border-radius: 7px;
+}
+.close-btn {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.close-btn:hover {
+    opacity: 1;
+}
+
+/* Scrollbar + Selectie v tekst */
+::-moz-selection {
+    color: white;
+    background-color: #84acce;
+}
+::selection {
+    color: white;
+    background-color: #84acce;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #84acce;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #84acced5;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 150px;
+    z-index: 999;
+}
+
+header a {
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+    padding-left: 4em;
+}
+
+.logo_rental {
+    width: 200px;
+    height: auto;
+    margin-right: 7%;
+}
+
+.later {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 260px;
+    background: linear-gradient(to top right, transparent, orange);
+    z-index: 100;
+}
+
+/* Tekst */
+.tekstvak {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tekstvak p {
+    color: #84acce;
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 15px;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+    align-items: center;
+}
+
+footer div {
+    padding: 10px;
+}
+
+.kolom {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: flex-start;
+}
+
+.kolom * {
+    padding: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
