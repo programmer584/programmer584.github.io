@@ -26,34 +26,53 @@
     </head>
     <body>
         <!-- Header -->
-        <header>
-            <a href="/">
+        <header class="header">
+            <a
+                href="/"
+                class="logo">
                 <img
-                    class="logo"
                     src="./media/Logo_Clear_Website.png"
                     alt="logo" />
             </a>
-            <nav>
-                <a href="#music">
+            <input
+                type="checkbox"
+                id="check" />
+            <label
+                for="check"
+                class="icons">
+                <i
+                    class="fa-solid fa-bars"
+                    id="menu-icon"></i>
+                <i
+                    class="fa-solid fa-x"
+                    id="close-icon"></i>
+            </label>
+            <nav class="navbar">
+                <a
+                    href="#about"
+                    style="--i: 0">
+                    <i class="fa-regular fa-address-card"></i>
+                    Over ons
+                </a>
+                <a
+                    href="#collection"
+                    style="--i: 1">
                     <i class="fa-solid fa-music"></i>
-                    Our songs
+                    Muziekcollectie
                 </a>
-                <a href="#test2">
-                    <i class="fa-solid fa-flask-vial"></i>
-                    Test
+                <a
+                    href="#music"
+                    style="--i: 1">
+                    <i class="fa-solid fa-circle-play"></i>
+                    Remixes & Tracks
                 </a>
-                <a href="#bookings">
+                <a
+                    href="#bookings"
+                    style="--i: 2">
                     <i class="fa-solid fa-calendar-days"></i>
-                    Bookings
+                    Boekingen
                 </a>
             </nav>
-            <a class="later" href="/">
-                <img
-                    class="logo"
-                    src="./media/Logo_Clear_Website.png"
-                    alt="logo" />
-            </a>
-            </a>
         </header>
         <!-- Fullscreenpicture -->
         <div class="fullscreenpicture">
@@ -69,12 +88,12 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
             <a
-                href="https://www.tiktok.com"
+                href="https://www.tiktok.com/@thecrossoverz"
                 target="_blank">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
             <a
-                href="https://www.soundcloud.com"
+                href="https://www.soundcloud.com/thecrossoverz/tracks"
                 target="_blank">
                 <i class="fa-brands fa-soundcloud"></i>
             </a>
@@ -83,30 +102,145 @@
         <div class="arrow-wrapper">
             <a
                 id="middle"
-                href="#collection">
+                href="#middle">
                 <i class="fas fa-arrow-down"></i>
             </a>
         </div>
-        <!-- Collection -->
-        <div id="collection" class="collection">
-            <h3>Collection of</h3>
-            <h2>>750</h2>
-            <h3>songs</h3>
+        <!-- About/info -->
+        <div
+            class="small-container"
+            id="about">
+            <div class="info">
+                <div class="card">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <br />
+                    <h2>Twee DJ's met één doel:</h2>
+                    <br />
+                    <h2>het dak eraf blazen!</h2>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <br />
+                    <h2>België,<br />provintie Antwerpen</h2>
+                </div>
+                <br />
+                <div class="card">
+                    <i class="fa-solid fa-sliders fa-rotate-90"></i>
+                    <br />
+                    <h2>Vertrouwd met elke mixer</h2>
+                    <br />
+                    <p>*We hebben ook eigen apparatuur beschikbaar indien gewenst</p>
+                </div>
+            </div>
         </div>
-        <!-- Genres -->
-        <div class="genres">
-            <h3>The best of genres:</h3>
-            <p>house</p>
-            <p>techno</p>
-            <p>hardstyle</p>
-            <p>hypertechno</p>
-            <p>drum & bass</p>
+        <!-- Collection -->
+        <!-- <div
+            class="small-container"
+            id="collection"> -->
+        <div id="collection">
+            <div class="collection">
+                <h1 class="vgigantisch">
+                    Een</h1>
+                    <h1 class="gigantisch">gigantische</h1>
+                    <h1 class="ngigantisch">muziekcollectie
+                </h1>
+                <br />
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quis! Eum sunt veniam architecto earum tempora natus, quos voluptate rerum explicabo provident quas maxime ea
+                    soluta, ex unde error eveniet aliquam labore! Aperiam similique asperiores nisi eaque aspernatur amet et unde incidunt nemo illum pariatur esse atque optio voluptatem cumque odio
+                    quod harum commodi, deleniti cupiditate ducimus magni. Cupiditate temporibus quibusdam, cumque necessitatibus sint nulla harum in tempora. Possimus eius a culpa! Ea voluptatibus,
+                    veniam, molestiae dolorem quae voluptatem rem, inventore facilis doloribus culpa enim debitis odit! Aut, fugit. Aliquam dicta at dolor? Error sequi tempora obcaecati fugit culpa
+                    enim delectus id molestiae tenetur quidem recusandae eos, ad architecto laboriosam numquam sunt rerum deserunt, nostrum magnam accusamus esse animi! Eveniet nesciunt enim illo
+                    maxime. Atque corrupti quisquam animi quis veritatis doloremque sunt natus, non soluta repellendus facilis quo exercitationem facere tempora amet, maiores porro? Nisi itaque neque
+                    natus sapiente? Architecto?
+                </p>
+                <h1>The best of genres:</h1>
+                <br />
+                <br />
+                <div class="genres">
+                    <p>house</p>
+                    <p>techno</p>
+                    <p>hardstyle</p>
+                    <p>hypertechno</p>
+                    <p>drum & bass</p>
+                </div>
+            </div>
         </div>
         <!-- Our music -->
         <div
             id="music"
             class="ourmusic">
-            <h1>Our latest song</h1>
+            <h1>Onze recentste Bootleg</h1>
+            <section class="slider">
+                <button class="slider__control prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider__control next"><i class="fa-solid fa-chevron-right"></i></button>
+                <div
+                    class="slider__container"
+                    data-multislide="false"
+                    data-step="4">
+                    <div class="slider__item">
+                        <img
+                            src="https://i1.sndcdn.com/artworks-G5zlAoqBXwSvIICA-72goBA-t500x500.jpg"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://i1.sndcdn.com/artworks-4ppcwJ354VyNl7k8-0dsFTw-t500x500.jpg"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://i1.sndcdn.com/artworks-6EthdMIWy4RByqze-cmPssg-t200x200.jpg"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://i1.sndcdn.com/artworks-41GbGRpJWhVQqVya-RzLOXw-t200x200.jpg"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/525/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/526/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/527/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/528/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/529/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://picsum.photos/id/530/700/700"
+                            alt=""
+                            width="100%" />
+                    </div>
+                </div>
+            </section>
             <div class="oursongs">
                 <audio
                     id="player"
@@ -118,7 +252,7 @@
                             id="playbtn"></i>
                     </div>
                     <div class="info">
-                        The Crossoverz - Skyfall (Hardstyle Bootleg)
+                        <p>The Crossoverz - Skyfall (Hardstyle Bootleg)</p>
                         <div class="bar">
                             <div id="progress"></div>
                         </div>
@@ -134,30 +268,13 @@
                 </div>
             </div>
         </div>
-        <!-- Test -->
-        <div class="test12">
-            <div class="test1">
-                <img
-                    src="./media/thecrossoverz_dj.jpg"
-                    alt="" />
-            </div>
-            <div
-                id="test2"
-                class="test2">
-                <h2>The Crossoverz</h2>
-                <ul>
-                    <li>Belgium</li>
-                    <li>province Antwerp</li>
-                    <li>Favourite equipment: CDJ 2000 nexus + DJM 450 nexus</li>
-                </ul>
-            </div>
-        </div>
         <!-- Contact: bookings + others -->
+        <!-- <div class="small-container"> -->
         <div
             id="bookings"
             class="bookings">
             <div>
-                <p>Bookings -></p>
+                <h1>Contact & Boekingen</h1>
             </div>
             <div>
                 <p>
@@ -166,74 +283,36 @@
                     <a href="mailto:thecrossoverz@hotmail.com"> thecrossoverz@hotmail.com </a>
                 </p>
                 <p>
-                    Others:
-                    <a href="">paozeijfof@gmail.com</a>
-                </p>
-                <p>
                     <i class="fa-solid fa-people-arrows"></i>
                     Collabs
                     <a href="">joazefjnzofoz@thecrossoverz.com</a>
                 </p>
+                <p>
+                    Others:
+                    <a href="">paozeijfof@gmail.com</a>
+                </p>
             </div>
         </div>
+        <!-- </div> -->
         <hr />
         <!-- Footer -->
         <footer>
-            <div class="kolom">
-                <p>© 2023 Nog geen copyright</p>
-                <p>The Crossoverz</p>
-                <p>39823983038</p>
-            </div>
-            <div class="kolom">
-                <a href="https://www.maps.google.com">
-                    <p>Belgium</p>
-                    <p>2960 Brecht</p>
-                </a>
-            </div>
-            <div class="kolom">
-                <a href="/contact.html">
-                    <i class="fa-solid fa-address-card"></i>
-                    Contact
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-file-invoice"></i>
-                    Terms And Conditions
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-cookie-bite"></i>
-                    Coockies
-                </a>
-            </div>
-            <div class="kolom">
-                <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href=""><i class="fa-brands fa-tiktok"></i> Tik Tok</a>
-                <a href=""><i class="fa-brands fa-soundcloud"></i> Soundcloud</a>
-            </div>
+            <a
+                href="https://www.instagram.com/thecrossoverz"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+            <a
+                href="https://www.tiktok.com/@thecrossoverz"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok"></i> Tik Tok</a
+            >
+            <a
+                href="https://www.soundcloud.com/thecrossoverz/tracks"
+                target="_blank"
+                ><i class="fa-brands fa-soundcloud"></i> Soundcloud</a
+            >
         </footer>
         <script src="./srcipt.js"></script>
-
-        <!-- Script voor pop-up -->
-        <script type="text/javascript">
-            const popupScreen = document.querySelector(".popup-screen");
-            const popupBox = document.querySelector(".popup-box");
-            const closeBtn = document.querySelector(".close-btn");
-
-            window.addEventListener("load", () => {
-                setTimeout(() => {
-                    popupScreen.classList.add("active");
-                }, 500);
-            });
-
-            closeBtn.addEventListener("click", () => {
-                popupScreen.classList.remove("active");
-                document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-            });
-            const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
-            if (WebsiteCookie != -1) {
-                popupScreen.style.display = "none";
-            } else {
-                popupScreen.style.display = "flex";
-            }
-        </script>
     </body>
 </html>
